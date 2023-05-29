@@ -4,25 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/CSS" href="styles.css" />
     <title>Estante de Livros</title>
   </head>
   <body>
-    <div>
+    <div id="header">
       <h1>Estante de Livros</h1>
-      <p>Sua biblioteca à um clique de distância</p>
+      <p id="yourLibrary">Sua biblioteca à um clique de distância</p>
     </div>
-    <div>
+    <div id="sumary">
       <h2>Sumário:</h2>
       <ol>
-        <li>Harry Potter e a Ordem da Fênix</li>
-        <li>Harry Potter e a Câmara Secreta</li>
-        <li>Harry Potter e o Enigma do Príncipe</li>
-        <li>Harry Potter e o Prisioneiro de Azkaban</li>
-        <li>Harry Potter e a Pedra Filosofal</li>
+        <li><a href="#sectionHP1">Harry Potter e a Ordem da Fênix</a></li>
+        <li><a href="#sectionHP2">Harry Potter e a Câmara Secreta</a></li>
+        <li><a href="#sectionHP3">Harry Potter e o Enigma do Príncipe</a></li>
+        <li>
+          <a href="#sectionHP4">Harry Potter e o Prisioneiro de Azkaban</a>
+        </li>
+        <li><a href="#sectionHP5">Harry Potter e a Pedra Filosofal</a></li>
       </ol>
     </div>
-    <section>
-      <h2>Harry Potter e a Ordem da Fênix</h2>
+    <section id="sectionHP1">
+      <h2 class="bookTitle">Harry Potter e a Ordem da Fênix</h2>
       <img
         src="img/harrypotterfenix.jpg"
         alt="Capa do livro Harry Potter e a Ordem da Fênix"
@@ -63,8 +66,8 @@
         </tbody>
       </table>
     </section>
-    <section>
-      <h2>Harry Potter e a Câmara Secreta</h2>
+    <section id="sectionHP2">
+      <h2 class="bookTitle">Harry Potter e a Câmara Secreta</h2>
       <img
         src="img/harrypottercamara.jpg"
         alt="Capa do livro Harry Potter e a Câmara Secreta"
@@ -104,8 +107,8 @@
         </tbody>
       </table>
     </section>
-    <section>
-      <h2>Harry Potter e o Enigma do Príncipe</h2>
+    <section id="sectionHP3">
+      <h2 class="bookTitle">Harry Potter e o Enigma do Príncipe</h2>
       <img
         src="img/harrypríncipe.jpg"
         alt="Capa do livro Harry Potter e o Enigma do Príncipe"
@@ -148,8 +151,8 @@
         </tbody>
       </table>
     </section>
-    <section>
-      <h2>Harry Potter e o Prisioneiro de Azkaban</h2>
+    <section id="sectionHP4">
+      <h2 class="bookTitle">Harry Potter e o Prisioneiro de Azkaban</h2>
       <img
         src="img/harryprisioneiro.jpg"
         alt="Capa do livro Harry Potter e o prisioneiro de Azkaban"
@@ -191,8 +194,8 @@
         </tbody>
       </table>
     </section>
-    <section>
-      <h2>Harry Potter e a Pedra Filosofal</h2>
+    <section id="sectionHP5">
+      <h2 class="bookTitle">Harry Potter e a Pedra Filosofal</h2>
       <img
         src="img/harrypedra.jpg"
         alt="Capa do livro Harry Potter e e a Pedra Filosofal"
@@ -235,5 +238,8 @@
         </tbody>
       </table>
     </section>
+    <footer>
+      <a href="#header">Voltar para o topo</a>
+    </footer>
   </body>
 </html>
