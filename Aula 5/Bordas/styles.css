@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.border {
+    border: 2px blue solid;
+    padding: 5px;
+}
+
+.borderDashed {
+    border: 2px red dashed;
+    padding: 5px;
+}
+
+.borderDotted {
+    border: 2px green dotted;
+    padding: 5px;
+}
+
+.borderDouble {
+    border: purple double;
+    padding: 5px;
+}
+
+.borderGroove {
+    border: 5px grey groove;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.borderRidge {
+    border: 5px cyan ridge;
+    padding: 5px;
+    border-radius: 10px 2px;
+}
+
+.borderOutset {
+    border: 2px black  outset;
+    padding: 5px;
+}
+
+.borderInset {
+    border: 2px palevioletred  inset;
+    padding: 5px;
+}
