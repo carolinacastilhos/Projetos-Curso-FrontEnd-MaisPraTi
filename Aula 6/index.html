@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Nome: </label>
+      <!-- o for serve para apontar o input usando o id dele. Assim, quando clicamos na label, ele já abre o input que está atrelado a ela. -->
+      <input type="text" id="name" placeholder="Nome" />
+      <!-- colocando id (em inglês) no input, ele sugere alguns auto completes, oq não aconteceria sem o id  -->
+      <!-- pode-se também colocar o input dentro da label, não interfere no resultado, porém não é necessário mais o for:
+     <label for="name">Nome: <input type="text" id="name" /></label>-->
+      <!-- placeholder é o texto que aparece dentro do input indicando a forma que deve ser a resposta ou oq está pedindo; neste caso é o "Nome" -->
+
+      <div>
+        <p>Selecione sua idade:</p>
+        <label><input type="radio" id="12" name="age" />12</label>
+        <!-- pode colocar o 12 na label também ao invés de entro do input, ficará antes do radio -->
+        <label><input type="radio" id="13" name="age" />13</label>
+        <label><input type="radio" id="14" name="age" />14</label>
+        <!-- o tipo radio serve par selecionar somente uma das opções, então colocamos o name igual para todos -->
+      </div>
+      <div>
+        <p>Selecione os seus hobbies favoritos:</p>
+        <label
+          ><input type="checkbox" name="hobbies" id="film" />Assitir
+          filmes</label
+        >
+        <label
+          ><input type="checkbox" name="hobbies" id="series" />Assitir
+          séries</label
+        >
+        <label
+          ><input type="checkbox" name="hobbies" id="code" />Programar</label
+        >
+        <!-- no checkbox podemos selecionar vários, diferentemente do radio -->
+      </div>
+
+      <button style="margin-top: 2rem">Enviar</button>
+      <!-- o botão precisa estar dentro da tag form para entender que é para enviar as informações do formulário -->
+    </form>
+  </body>
+</html>
