@@ -1,113 +1,118 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #dbdbdb;
-    color: #0d0d0d;
-    text-align: justify;
-    width: 100%;
-    margin: auto;
+  background-color: #dbdbdb;
+  color: #0d0d0d;
+  text-align: justify;
+  width: 100%;
+  margin: auto;
 }
 
 section {
-    padding: 64px 256px;
+  padding: 64px 256px;
 }
 
 table {
-    width: 100%;
+  width: 100%;
 }
 
 td {
-    background-color: #a9d9d0;    
+  background-color: #a9d9d0;
 }
 
-td, th {
-    border: 1px solid black;
-    border-radius: 4px;
-    text-align: center;   
+td,
+th {
+  border: 1px solid black;
+  border-radius: 4px;
+  text-align: center;
 }
 
 tr {
-    background-color: #038c7f;
+  background-color: #038c7f;
 }
 
 p {
-    text-align: justify;
-    text-indent: 50px;
+  text-align: justify;
+  text-indent: 50px;
 }
 
-h1, h2, h3 {
-    text-align: center;
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 
 h3 {
-    color: #000;
+  color: #000;
 }
 
 a:link {
-    /* link normal */
-    color: #dbdbdb;
+  /* link normal */
+  color: #dbdbdb;
 }
 
 a:visited {
-    /* link após visitado */
-    color: #95bfb8;
+  /* link após visitado */
+  color: #95bfb8;
 }
 
 a:hover {
-    /* quando passa o mouse */
-    color: #025454;
+  /* quando passa o mouse */
+  color: #025454;
 }
 
 a:active {
-    /* link selecionado */
-    color: #0d0d0d;
+  /* link selecionado */
+  color: #0d0d0d;
 }
 
 img {
-    width: 300px;
-    display: block;
-    margin: auto;
-    border-radius: 50px;
+  width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 50px;
 }
 
 .bookTitle {
-    background-color: #a9d9d0;
-    color: #027373;
-    text-align: center;
+  background-color: #a9d9d0;
+  color: #027373;
+  text-align: center;
 }
 
-#sectionHP1, #sectionHP3, #sectionHP5 {
-    background-color: #a9d9d0;   
+#sectionHP1,
+#sectionHP3,
+#sectionHP5 {
+  background-color: #a9d9d0;
 }
 
 #header {
-    background-color: #038c7f;
-    color: #dbdbdb;
-    padding: 20px;
-    margin-bottom: 0px;
+  background-color: #038c7f;
+  color: #dbdbdb;
+  padding: 20px;
+  margin-bottom: 0px;
 }
 
 #yourLibrary {
-    text-indent: 0px;
-    text-align: center;
+  text-indent: 0px;
+  text-align: center;
 }
 
 #sumary {
-    background-color: #038c7f;
-    color: #dbdbdb;
-    padding: 20px;
-    margin-bottom: 50px;
-    border-radius: 0 0 50px 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: #038c7f;
+  color: #dbdbdb;
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 0 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }
 
 footer {
-    background-color: #038c7f;
-    width: 100%;
-    text-align: center;
-    padding: 30px 0px;
+  background-color: #038c7f;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
 }
