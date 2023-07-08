@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testando Aritmética</title>
+  </head>
+  <body>
+    <p id="teste"></p>
+    <!-- para facilitar a criação da tag p com o id teste, podemos escrever p#teste -->
+    <!-- se quisermos criar com classe, é p.teste -->
+    <p id="calculo"></p>
+    <p id="concatenacao"></p>
+
+    <script>
+      let x = 1;
+      document.getElementById("teste").innerHTML = x;
+
+      let y = 5 + 2 + 3;
+      document.getElementById("calculo").innerHTML = y;
+
+      let z = "John" + " " + "Doe";
+      document.getElementById("concatenacao").innerHTML = z;
+    </script>
+  </body>
+</html>

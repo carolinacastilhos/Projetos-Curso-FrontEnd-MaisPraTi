@@ -24,4 +24,33 @@ function showAlert() {
 // oq pode-se fazer é atualiza-la: let color = "Verde"; color = "amarelo";
 // no entanto ela pode ser redefinida em outro escopo.
 
+/*Principais diferenças entre let e var: 
+- var: é possível atualizar e re-declarar suas informações. Podemos acessas fora e dentro de um escopo;
+- let: não é possível re-declarar, apenas atualizar. Não podemos acessas fora do nosso escopo.
+*/
+
 // o const é uma constante, não pode ser redefinida nem atualizada, tem sempre o mesmo valor que foi definido inicialmente.
+
+/*  podemos declarar mais de uma variável em uma mesma declaração:
+let moto = "honda", dono = "John", preco = 200;
+Mas tem também na forma objeto: 
+
+let carro = {
+  nome: "gol",
+  dono: "jhon",
+  preco: 300,
+};
+
+let motos = {
+  1: {
+    nome: "honda",
+    dono: "John",
+    preco: 200,
+  }, 
+  2: {
+    nome: "Yamaha",
+    dono: "Jose",
+    preco: 300,
+  },
+};
+*/
