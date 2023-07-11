@@ -19,6 +19,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -154,6 +155,7 @@
                     <td scope="col">6,1</td>
                     <td scope="col">Suspense</td>
                 </tr>
+                <tr id="insertRow"></tr>
             </tbody>
         </table>
     </div>
@@ -162,20 +164,22 @@
         <hr class="border-primary border-3 opacity-75" />
     </div>
 
-    <div class="container mb-5">
+    <div class="container mb-5" id="cadfilmes">
         <h2 class="text-center mb-4">Cadastro de Filmes</h2>
 
-        <form>
+        <form name="register" onsubmit="event.preventDefault()">
+            <!-- onsubmit event.preventDefault: estamos usando uma função para evitar alguns padrões que ocorrem nos eventos, como resetar a página após clicar no botão se não der alguma validação-->
+
             <!-- Cadastro do Código e do título -->
             <div class="row">
                 <div class="mb-3 col">
                     <label for="codFilme" class="form-label">Código</label>
-                    <input type="text" class="form-control" id="codFilme"/>
+                    <input type="text" class="form-control" id="codFilme" name="cod"/>
                 </div>
                 
                 <div class="mb-3 col">
                     <label for="titleFilme" class="form-label">Título</label>
-                    <input type="text" class="form-control" id="titleFilme"/>
+                    <input type="text" class="form-control" id="titleFilme" name="title"/>
                 </div>
             </div>
 
@@ -183,11 +187,11 @@
             <div class="row">
                 <div class="mb-3 col">
                     <label for="directorFilme" class="form-label">Diretor</label>
-                    <input type="text" class="form-control" id="directorFilme"/>
+                    <input type="text" class="form-control" id="directorFilme" name="director"/>
                 </div>
                 <div class="mb-3 col">
                     <label for="yearFilme" class="form-label">Lançamento</label>
-                    <input type="text" class="form-control" id="yearFilme" placeholder="DD de mês de AAAA"/>
+                    <input type="text" class="form-control" id="yearFilme" placeholder="DD de mês de AAAA" name="date"/>
                     <!-- podemos colocar o type date se preferirmos, mas aparecerá o calendário -->
                 </div>
             </div>
@@ -196,11 +200,11 @@
             <div class="row">
                 <div class="mb-3 col">
                     <label for="mainActor" class="form-label">Ator/Atriz Principal</label>
-                    <input type="text" class="form-control" id="mainActor"/>
+                    <input type="text" class="form-control" id="mainActor" name="actor"/>
                 </div>
                 <div class="mb-3 col">
                     <label for="imdbGrade" class="form-label">Nota no IMDb</label>
-                    <input type="text" class="form-control" id="imdbGrade" placeholder="por exemplo 9,9"/>
+                    <input type="text" class="form-control" id="imdbGrade" placeholder="por exemplo 9,9" name="imdb"/>
                 </div>
             </div>
 
@@ -226,7 +230,7 @@
             </div>
 
             <div class="col-auto d-flex justify-content-center">
-                <button type="submit" class="btn btn-primary mt-3">Cadastrar</button>
+                <button type="submit" onclick="validationForm(); insert()" class="btn btn-primary mt-3">Cadastrar</button>
             </div>
         </form>
     </div>
