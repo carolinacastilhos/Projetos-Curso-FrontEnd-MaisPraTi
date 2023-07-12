@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acessibilidade</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Xícara de café</h1>
+    <img
+      src="img/cafe.png"
+      alt="Um desenho de uma xícara de café"
+      height="200"
+      width="200"
+    />
+    <!-- na descrição (alt), não precisamos iniciar "uma imagem de tal tal tal..." pois o leitor de tela já fará/informará isto. -->
+    <p>Xícara de café.</p>
+    <p lang="fr">Tasse de café.</p>
+    <!-- quando for fazer a tradução da página, reconhecerá a linguagem desta frase em específico, que está diferente da linguagem do resto do código -->
+  </body>
+</html>

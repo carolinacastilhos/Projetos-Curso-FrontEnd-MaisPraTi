@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.background {
+  background-color: #5333ed;
+}
+
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  /* definindo que o sticky permanecerá sempre no topo */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navList {
+  display: flex;
+  width: 50%;
+}
+
+.navList li {
+  list-style: none;
+  padding: 2rem 2.2rem;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navList li a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.rightNav {
+  width: 15%;
+}
+
+.headerTitle {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-self: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.textRight {
+  align-self: flex-end;
+}
+
+.ayImage {
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.ayText:focus {
+  font-weight: bold;
+  /* definimos que quando esta área estiver com foco (pelo tab por exemplo), a fonte ficará bold */
+  outline: none;
+}
+
+/* podemos utilizar o https://asesweb.governoeletronico.gov.br/ para fazer upload do nosso arquivo html para ver o nosso score e sugestões de acessibilidade*/
