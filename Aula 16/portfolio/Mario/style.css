@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gameBoard {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1rem solid rgb(28, 119, 10);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* overflow hidden: para que todos os objetos que estão fora da 
+  nossa tela não apareceram, não será possível scrollar para vê-los, 
+  ficarão escondidos. */
+  background: linear-gradient(#46beee, #e0f6ff);
+}
+
+.pipe {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 112px;
+  animation: pipeAnimation 2s infinite linear;
+  /* o nome da animação será pipeAnimation e estamos aqui solicitando que rode esta animação,
+   que ocorrerá por 2 seg, infinita e linear. Acontecerá uma vez a cada 2 seg e 
+   quando acabar reiniciará infinatamente */
+}
+
+@keyframes pipeAnimation {
+  from {
+    right: -80px;
+  }
+  to {
+    right: 100%;
+  }
+  /* aqui estamos configurando a animação chamada pipenimation; 
+  o objeto vai começar em um determinado ponto da dela, 
+  que neste caso é -80px da nossa direita e terminará em 100% da direita (seria semelhante a deixar left 0, mas deixaria o cano parado neste ponto) */
+}
+
+.mario {
+  position: absolute;
+  bottom: 0;
+  width: 150px;
+}
+
+.jump {
+  animation: jumpAnimation 500ms infinite ease-out;
+  /* ease-out faz com que a animação termine de forma suave, temrina de forma mais lenta */
+}
+
+@keyframes jumpAnimation {
+  0% {
+    bottom: 0;
+  }
+  40% {
+    bottom: 180px;
+  }
+  50% {
+    bottom: 180px;
+  }
+  60% {
+    bottom: 180px;
+  }
+  100% {
+    bottom: 0;
+  }
+  /* no 0% desta animação, ou seja, no início dela, o bottom será 0, ela estará no chão. 
+  nos 40, 50 e 60% o bottom será 180px e finalizará (100%) em 0 novamente*/
+}
+
+.clouds {
+  position: absolute;
+  width: 550px;
+  animation: cloudsAnimation 20s infinite linear;
+}
+
+@keyframes cloudsAnimation {
+  from {
+    right: -550px;
+  }
+  to {
+    right: 100%;
+  }
+}
